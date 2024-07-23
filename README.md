@@ -8,9 +8,9 @@ including 66 males and 59 females, with ages ranging from 6 to 63 years.
 The average age of volunteers is 28.6 years, with a standard deviation of 13.06 years.
 We established two sessions for the dataset, namely the Crowded-Office session and the Spacious-Corridor session.
 
-![Session I: Crowded-Office](./scene1.png ){width=70%}
+![Session I: Crowded-Office](./scene1.png )
 *Session I: Crowded-Office*
-![Session II: Spacious-Corridor](./scene2.png){width=70%}
+![Session II: Spacious-Corridor](./scene2.png)
 *Session II: Spacious-Corridor*
 
 Volunteers were instructed to walk back and forth within the designated area, first walking towards the radar and then walking away. In the experiment, we only specified the walking direction for volunteers and did not require volunteers to follow a predefined trajectory.
@@ -19,7 +19,7 @@ In each session, volunteers went through five distinct walking behaviors: normal
 We preprocess each frame's range-Doppler heatmap using the proposed method in RDGait, segmenting them into samples. Each sample consists of 1 second (20 frames) of radar data. To compare with other gait recognition methods, besides RDStack, we also preprocess the data into three other formats.
 The first format is the micro-Doppler spectrogram (MD for short), which is derived by summing RDStacks along the range dimension, resulting in samples sized at $20\times255$. The second format, the range-time spectrogram (RT for short), comprises samples sized at $20\times70$. Finally, the last format is the point cloud (PC for short), where each frame is sized at $N\times4\times20$, with $N$ representing the number of extracted points. Each point has four attributes: $(x, y, v, snr)$, where $x = r\cdot cos\theta$, $y = r\cdot sin\theta$, $r$ is a range, $snr$ is signal-to-noise ratio, and $\theta$ is the angle of the point, estimated by Minimum Variance Distortionless Response (MVDR) beamforming.
 
-![Samples](./samples.png){width=100%}
+![Samples](./samples.png)
 *RDStack samples, we list age, gender, and walking behavior separately under each subfigure.*
 
 Dataset Download:
