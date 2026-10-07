@@ -42,3 +42,9 @@ File naming rules:
 
 **k**: Action index 1:W 2:W-BP 3:W-HB 4:W-Call 5:W-txt 
 
+## Related Work: FlowGait (CHI 2026)
+
+Check out our latest work, [FlowGait](https://github.com/DQ-WDQ/FlowGait), on robust, long-term gait recognition with mmWave radar. Its publicly available dataset covers 12 gait conditions, 11 walking routes, and recordings collected over two weeks, supporting research on recognition across everyday variations and over time.
+
+👉 [Paper, dataset, and updates](https://github.com/DQ-WDQ/FlowGait)
+
